@@ -8,7 +8,8 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="509dp">
+        android:layout_height="509dp"
+        tools:ignore="UselessParent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -21,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Rock paper scissors"
+                android:text="@string/rock_paper_scissors"
                 android:textSize="24sp" />
         </TableRow>
 
@@ -41,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="Computer"
+                android:text="@string/computer"
                 android:textSize="24sp" />
 
             <TextView
@@ -50,7 +51,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="Player"
+                android:text="@string/player"
                 android:textSize="24sp" />
 
         </TableRow>
@@ -66,10 +67,11 @@
                 android:orientation="horizontal" />
 
             <ImageView
-                android:id="@+id/imcomputer"
+                android:id="@+id/imageView"
                 android:layout_width="204dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/scissor" />
+                app:srcCompat="@drawable/scissor"
+                android:contentDescription="TODO" />
 
             <LinearLayout
                 android:layout_width="207dp"
@@ -83,6 +85,7 @@
                     android:layout_gravity="center"
                     android:background="#00000000"
                     android:scaleType="fitCenter"
+                    android:contentDescription="@string/scissor"
                     app:srcCompat="@drawable/scissor" />
 
                 <ImageButton
@@ -92,6 +95,7 @@
                     android:layout_gravity="center"
                     android:background="#00000000"
                     android:scaleType="fitCenter"
+                    android:contentDescription="@string/rock"
                     app:srcCompat="@drawable/rock" />
 
                 <ImageButton
@@ -101,6 +105,7 @@
                     android:layout_gravity="center"
                     android:background="#00000000"
                     android:scaleType="fitCenter"
+                    android:contentDescription="@string/paper"
                     app:srcCompat="@drawable/paper" />
             </LinearLayout>
 
@@ -116,7 +121,7 @@
                 android:layout_width="411dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Play choose a button"
+                android:text="@string/play_choose_a_button"
                 android:textSize="24sp" />
         </TableRow>
     </TableLayout>

@@ -11,4 +11,5 @@
     <string name="win">You Win!!!!!</string>
     <string name="lose">You Lose!!!!!</string>
     <string name="draw">Draw!!!!!</string>
+    <string name="scissor">Scissor</string>
 </resources>
